@@ -1,3 +1,9 @@
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Arrays;
+
 public class Homework002 {
     public static void main(String [] str) {
         String user = "name: Ivanov, county: Russia, sity: Moscow, age: null";
@@ -30,4 +36,5 @@ public class Homework002 {
         System.out.println(builder);
         //System.out.println("Студент " + stud[1] + " получил " + stud[3] + " по предмету " + stud[5] + ".");
     }
+
 }
