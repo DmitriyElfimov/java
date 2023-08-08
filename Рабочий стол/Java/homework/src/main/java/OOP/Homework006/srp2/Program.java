@@ -1,5 +1,7 @@
 package OOP.Homework006.srp2;
 
+import static OOP.Homework006.srp2.InputFromConsole.*;
+
 public class Program {
 
     /**
@@ -9,9 +11,11 @@ public class Program {
      */
     public static void main(String[] args) {
 
-        Order order = new Order();
-        order.inputFromConsole();
-        order.saveToJson();
+        System.out.println("Введите заказ:");
+        Order order = new Order(clientName,product,qnt,price);
+        order.inputData(clientName,product,qnt,price);
+//        System.out.println(order);
+        order.saveData(clientName,product,qnt,price);
 
 
 
