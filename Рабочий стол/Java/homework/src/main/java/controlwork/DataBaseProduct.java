@@ -44,7 +44,7 @@ public class DataBaseProduct{
 
 public static void drawingProduct (int numberOfDraws){
         for (int i = 1; i<=numberOfDraws; i++){
-            int numb = new Random().nextInt(0,100);
+            int numb = new Random().nextInt(100);
             System.out.println("Приз № " + i + " : " + dataBaseProductName.get(frequencyOfLoss.get(numb)-1));
             draws.add(i-1,"Приз № " + i + " : " +dataBaseProductName.get(frequencyOfLoss.get(numb)-1));
 
